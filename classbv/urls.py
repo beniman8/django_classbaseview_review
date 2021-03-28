@@ -5,5 +5,6 @@ from django.views.generic import TemplateView
 app_name = 'website'
 
 urlpatterns = [
-    path('first/', TemplateView.as_view()),
+    
+    path('', TemplateView.as_view(template_name='index.html',extra_context={'title':'Custom Title'})),
 ]
