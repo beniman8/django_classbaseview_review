@@ -6,5 +6,5 @@ app_name = 'website'
 
 urlpatterns = [
     
-    path('', TemplateView.as_view(template_name='index.html',extra_context={'title':'Custom Title'})),
+    path('', TemplateView.as_view(template_name='classbv/index.html',extra_context={'title':'Custom Title'})),
 ]
