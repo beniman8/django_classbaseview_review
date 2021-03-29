@@ -1,6 +1,6 @@
 from django.urls import path
 from django.views.generic import TemplateView,RedirectView
-from .views import HomeTemplateView
+from .views import HomeTemplateView,PostPreLoadTaskView,SinglePostView
 
 
 app_name = 'website'
