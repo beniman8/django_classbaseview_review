@@ -4,6 +4,16 @@
 
 
 {% block content %}
-Hello world 2
+
+{% if posts %}
+{% for post in posts %}
+{{post.name}}
+<br>
+{% endfor %}
+
+{% endif %}
+
+<br>
+{{data}}
 
 {% endblock content %}

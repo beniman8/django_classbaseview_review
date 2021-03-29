@@ -9,7 +9,7 @@ class HomeTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["posts"] =  Post.objects.get(id=1)
+        context["posts"] =  Post.objects.all()
         context["data"] = "This is data for the second page"
         return context
     
