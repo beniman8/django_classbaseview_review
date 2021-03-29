@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     #local apps,
     'classbv',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'EST'
+TIME_ZONE = "America/Toronto"
 
 USE_I18N = True
 

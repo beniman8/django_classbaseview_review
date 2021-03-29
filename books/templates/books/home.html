@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}books index view{% endblock title %}
+
+{% block content %}
+
+{% if books %}
+<div class="card-deck">
+
+    {% for book in books %}
+    <div class="card">
+        <a href="{% url 'books:detail' slug=book.slug %}">
+        <div class="card-body">
+            <h4 class="card-title">{{book.title}}</h4>
+            <p class="card-text">{{book.genre}}</p>
+            <div class="d-flex">
+                <small class="text-muted">{{book.isbn}}</small>
+            </div>
+        </div>
+    </a>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+{% endblock content %}
