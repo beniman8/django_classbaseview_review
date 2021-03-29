@@ -6,6 +6,7 @@
 {% block content %}
 {% comment %} This is how you can get the url app_name:name name is the name of the link you want to show up on url {% endcomment %}
 <a href="{% url 'website:youtube' %}">Youtube</a>
+<br>
 {% if posts %}
 {% for post in posts %}
 {{post.name}}
